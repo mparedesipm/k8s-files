@@ -11,7 +11,7 @@ metadata:
   name: prometheus
   namespace: monitoring
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: prometheus
   ports:
@@ -74,7 +74,7 @@ metadata:
   name: grafana
   namespace: monitoring
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: grafana
   ports:
