@@ -17,7 +17,7 @@ spec:
   ports:
     - name: web
       port: 9090
-      targetPort: 9090
+      NodePort: 33090
  
 ---
  
@@ -80,7 +80,7 @@ spec:
   ports:
     - name: web
       port: 3000
-      targetPort: 3000
+      NodePort: 30500
  
 ---
  
